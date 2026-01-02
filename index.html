@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Edilene Lima – Rosa dos Ventos Escola Holística</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rosa dos Ventos</title>
 
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
-
-  <meta name="theme-color" content="#7b4fa3">
 </head>
 
 <body>
-  <main class="container">
-    <h1>Edilene Lima</h1>
-    <h2>Rosa dos Ventos Escola Holística</h2>
 
-    <p class="sub">
-      Terapias • Autoconhecimento • Espiritualidade
-    </p>
+  <!-- TELAS -->
+  <main>
+    <section class="tela ativa" id="inicio">
+      <h1>🌹 Rosa dos Ventos</h1>
+      <p>Bem-vinda ao seu espaço de cura.</p>
+    </section>
 
-    <div class="buttons">
-      <a href="#" class="btn">🔮 Ritual / Carta do Dia</a>
-      <a href="#" class="btn">🎧 Meditação Guiada</a>
-      <a href="#" class="btn">🌿 Meus Atendimentos</a>
-      <a href="https://wa.me/55SEUNUMERO" class="btn">💬 Falar Comigo</a>
-    </div>
+    <section class="tela" id="terapias">
+      <h1>✨ Terapias</h1>
+      <p>Descrição das terapias holísticas.</p>
+    </section>
+
+    <section class="tela" id="oraculos">
+      <h1>🔮 Oráculos</h1>
+      <p>Baralho cigano, tarot e mais.</p>
+    </section>
+
+    <section class="tela" id="agenda">
+      <h1>📅 Agenda</h1>
+      <p>Agendamentos e atendimentos.</p>
+    </section>
+
+    <section class="tela" id="contato">
+      <h1>💌 Contato</h1>
+      <p>Fale comigo.</p>
+    </section>
   </main>
 
-  <script src="app.js"></script>
+  <!-- MENU INFERIOR -->
+  <nav class="menu-app">
+    <button onclick="mostrarTela('inicio')">🏠<span>Início</span></button>
+    <button onclick="mostrarTela('terapias')">✨<span>Terapias</span></button>
+    <button onclick="mostrarTela('oraculos')">🔮<span>Oráculos</span></button>
+    <button onclick="mostrarTela('agenda')">📅<span>Agenda</span></button>
+    <button onclick="mostrarTela('contato')">💌<span>Contato</span></button>
+  </nav>
+
+  <script src="script.js"></script>
 </body>
 </html>
