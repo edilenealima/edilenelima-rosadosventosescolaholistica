@@ -1,0 +1,21 @@
+{
+  "name": "Edilene Lima – Rosa dos Ventos Escola Holística",
+  "short_name": "Rosa dos Ventos",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#2e1a47",
+  "theme_color": "#7b4fa3",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
