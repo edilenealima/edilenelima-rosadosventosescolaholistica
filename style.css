@@ -99,5 +99,48 @@ main {
   color: #5e2b97;
   line-height: 1.5;
 }
+.subtitulo-pagina {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 22px;
+}
+
+.lista-terapias {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-terapia {
+  background: white;
+  padding: 20px;
+  border-radius: 22px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.14);
+}
+
+.card-terapia h3 {
+  margin-top: 0;
+  color: #5e2b97;
+  font-size: 17px;
+}
+
+.card-terapia p {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.card-terapia button {
+  margin-top: 12px;
+  background: #5e2b97;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 
 
