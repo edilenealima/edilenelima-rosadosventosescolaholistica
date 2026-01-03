@@ -83,7 +83,7 @@ main {
 }
 .frase-boas-vindas {
   position: relative;
-  margin: -32px auto 28px auto;
+  margin: -24px auto 24px;
   background: #ffffff;
   padding: 20px 26px;
   border-radius: 22px;
