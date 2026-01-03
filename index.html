@@ -66,8 +66,6 @@
       <p>Escuta, acolhimento e direcionamento espiritual personalizado.</p>
       <button>Saiba mais</button>
     </div>
-    <button onclick="window.open('https://wa.me/55SEUNUMERO', '_blank')">
-  Agendar pelo WhatsApp
 </button>
 
 
@@ -100,5 +98,13 @@
   </nav>
 
   <script src="script.js"></script>
+  <script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("splash").style.display = "none";
+    }, 2000); // tempo do splash (2s)
+  });
+</script>
+
 </body>
 </html>
