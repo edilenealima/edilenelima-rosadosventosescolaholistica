@@ -82,21 +82,22 @@ main {
   opacity: 0.9;
 }
 .frase-boas-vindas {
-  margin: -26px auto 28px;
-  background: white;
-  padding: 18px 24px;
-  border-radius: 20px;
+  position: relative;
+  margin: -32px auto 28px auto;
+  background: #ffffff;
+  padding: 20px 26px;
+  border-radius: 22px;
   text-align: center;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.16);
-  max-width: 80%;
+  box-shadow: 0 12px 28px rgba(94,43,151,0.35);
+  max-width: 78%;
 }
 
 .frase-boas-vindas p {
   margin: 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #5e2b97;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 
