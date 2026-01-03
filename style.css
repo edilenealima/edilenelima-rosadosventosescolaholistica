@@ -82,25 +82,21 @@ main {
   opacity: 0.9;
 }
 .frase-boas-vindas {
-  margin: -24px auto 24px;
+  margin: -26px auto 28px;
   background: white;
-  padding: 16px 22px;
-  border-radius: 18px;
+  padding: 18px 24px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.14);
-  max-width: 85%;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+  max-width: 80%;
 }
 
 .frase-boas-vindas p {
-  margin: 0 auto;
-  font-size: 15.5px;
+  margin: 0;
+  font-size: 16px;
   font-weight: 500;
   color: #5e2b97;
-  line-height: 1.4;
-}
-.frase-boas-vindas {
-  display: flex;
-  justify-content: center;
+  line-height: 1.45;
 }
 
 
