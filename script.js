@@ -1,9 +1,10 @@
 function mostrar(id) {
-  // Esconde todas as seções
   const secoes = document.querySelectorAll('.section');
-  secoes.forEach(sec => sec.classList.remove('active'));
 
-  // Mostra a seção clicada
+  secoes.forEach(sec => {
+    sec.classList.remove('active');
+  });
+
   const ativa = document.getElementById(id);
   if (ativa) {
     ativa.classList.add('active');
