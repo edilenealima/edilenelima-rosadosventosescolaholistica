@@ -184,6 +184,44 @@ main {
     opacity: 1;
     transform: translateY(0);
   }
+  .perfil-container {
+  text-align: center;
+  margin: 30px 0;
 }
+
+.moldura-dourada {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 12px;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #d4af37,
+    #f9e076,
+    #c9a227
+  );
+  box-shadow: 0 10px 25px rgba(212,175,55,0.4);
+}
+
+.moldura-dourada img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+}
+
+.nome-perfil {
+  margin: 10px 0 4px;
+  color: #5e2b97;
+}
+
+.descricao-perfil {
+  font-size: 14px;
+  color: #666;
+}
+
+
 
 
