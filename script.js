@@ -1,8 +1,12 @@
-<script>
 function mostrar(id) {
-  document.querySelectorAll('.section').forEach(sec => {
-    sec.classList.remove('active');
-  });
-  document.getElementById(id).classList.add('active');
+  // Esconde todas as seções
+  const secoes = document.querySelectorAll('.section');
+  secoes.forEach(sec => sec.classList.remove('active'));
+
+  // Mostra a seção clicada
+  const ativa = document.getElementById(id);
+  if (ativa) {
+    ativa.classList.add('active');
+  }
 }
-</script>
+
