@@ -1,21 +1,22 @@
 {
   "name": "Rosa dos Ventos Escola Holística",
   "short_name": "Rosa dos Ventos",
-  "start_url": "./?v=2",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#5e2b97",
   "theme_color": "#5e2b97",
   "icons": [
-  {
-    "src": "icone-192.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  },
-  {
-    "src": "icone-512.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }
-]
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
 
 
