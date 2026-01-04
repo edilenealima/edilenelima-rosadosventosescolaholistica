@@ -1,122 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Rosa dos Ventos • Escola Holística</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edilene Lima – Rosa dos Ventos Escola Holística</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#5e2b97">
-
-  <!-- Manifest -->
   <link rel="manifest" href="manifest.json">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Ícone fallback -->
-  <link rel="icon" href="icon-512.png">
+  <meta name="theme-color" content="#7b4fa3">
 </head>
 
 <body>
+  <main class="container">
+    <h1>Edilene Lima</h1>
+    <h2>Rosa dos Ventos Escola Holística</h2>
 
-  <!-- SPLASH INTERNO -->
-  <div id="splash">
-    <img src="icon-512.png" alt="Rosa dos Ventos">
-    <p>Rosa dos Ventos<br><span>Escola Holística</span></p>
-  </div>
+    <p class="sub">
+      Terapias • Autoconhecimento • Espiritualidade
+    </p>
 
-  <!-- APP -->
-  <div id="app" style="display:none;">
+    <div class="buttons">
+      <a href="#" class="btn">🔮 Ritual / Carta do Dia</a>
+      <a href="#" class="btn">🎧 Meditação Guiada</a>
+      <a href="#" class="btn">🌿 Meus Atendimentos</a>
+      <a href="https://wa.me/55SEUNUMERO" class="btn">💬 Falar Comigo</a>
+    </div>
+  </main>
 
-    <!-- TOPO -->
-    <header class="topo-app">
-      <div class="logo-container">
-        <img src="icon-512.png" class="logo-app" alt="Logo">
-      </div>
-      <h1 class="nome">Rosa dos Ventos</h1>
-      <p class="marca">Escola Holística</p>
-    </header>
-
-    <!-- FRASE -->
-    <section class="frase-boas-vindas">
-      <p>✨ Terapias, oráculos e caminhos de autoconhecimento para alinhar sua energia ✨</p>
-    </section>
-
-    <!-- CONTEÚDO -->
-    <main>
-
-      <!-- INÍCIO -->
-      <div class="tela ativa" id="inicio">
-        <h2>🌿 Bem-vinda</h2>
-        <p>
-          Aqui você encontra terapias energéticas, oráculos e atendimentos
-          voltados ao equilíbrio espiritual, emocional e energético.
-        </p>
-      </section>
-
-      <!-- TERAPIAS -->
-      <section class="tela" id="terapias">
-        <h2>🔮 Terapias</h2>
-        <ul>
-          <li>✨ Reiki</li>
-          <li>✨ Limpeza Energética</li>
-          <li>✨ Mesa Radiônica</li>
-          <li>✨ Alinhamento Espiritual</li>
-        </ul>
-      </section>
-
-      <!-- ORÁCULOS -->
-      <section class="tela" id="oraculos">
-        <h2>🃏 Oráculos</h2>
-        <ul>
-          <li>Baralho Cigano</li>
-          <li>Tarot Terapêutico</li>
-          <li>Oráculos Intuitivos</li>
-        </ul>
-      </section>
-
-      <!-- AGENDA -->
-      <section class="tela" id="agenda">
-        <h2>📅 Agendamento</h2>
-        <p>Clique abaixo para agendar seu atendimento:</p>
-
-        <a class="btn-whatsapp"
-           href="https://wa.me/55SEUNUMEROAQUI"
-           target="_blank">
-          Agendar pelo WhatsApp
-        </a>
-      </section>
-
-      <!-- CONTATO -->
-      <section class="tela" id="contato">
-        <h2>📞 Contato</h2>
-        <p>
-          Atendimento direto via WhatsApp.<br>
-          Clique no botão abaixo para falar comigo.
-        </p>
-
-        <a class="btn-whatsapp"
-           href="https://wa.me/55SEUNUMEROAQUI"
-           target="_blank">
-          Falar no WhatsApp
-        </a>
-      </section>
-
-    </main>
-
-    <!-- MENU -->
-    <nav class="menu-app">
-      <button onclick="mostrarTela('inicio')">🏠<span>Início</span></button>
-      <button onclick="mostrarTela('terapias')">✨<span>Terapias</span></button>
-      <button onclick="mostrarTela('oraculos')">🃏<span>Oráculos</span></button>
-      <button onclick="mostrarTela('agenda')">📅<span>Agenda</span></button>
-      <button onclick="mostrarTela('contato')">💬<span>Contato</span></button>
-    </nav>
-
-  </div>
-
-  <!-- JS -->
-  <script src="script.js"></script>
-
+  <script src="app.js"></script>
 </body>
 </html>
