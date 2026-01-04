@@ -5,37 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rosa dos Ventos</title>
 
+  <meta name="theme-color" content="#5e2b97">
+
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- TOPO -->
   <header class="topo-app">
-  <img src="icon-192.png" alt="Rosa dos Ventos" class="logo-app">
-
-  <div class="titulo-app">
+    <img src="icon-192.png" class="logo-app" alt="Rosa dos Ventos">
     <h1>Edilene Lima</h1>
-    <h2>Rosa dos Ventos Escola Holística</h2>
-  </div>
-</header>
+    <p>Rosa dos Ventos Escola Holística</p>
+  </header>
 
- <header class="topo-app">
-  <div class="logo-container">
-    <img src="icon-192.png" alt="Rosa dos Ventos" class="logo-app">
-  </div>
+  <!-- TELAS -->
+  <main>
 
-  <h1 class="nome">Edilene Lima</h1>
-  <h2 class="marca">Rosa dos Ventos Escola Holística</h2>
-</header>
+    <section id="inicio" class="tela ativa">
+      <div class="frase">
+        ✨ Bem-vindo ao seu espaço de cura ✨
+      </div>
 
+      <p class="texto">
+        Autoconhecimento, terapias integrativas e espiritualidade consciente.
+      </p>
     </section>
+
+    <section id="terapias" class="tela">
+      <h2>Terapias</h2>
+      <p>Reiki, Baralho Cigano, Terapias Energéticas.</p>
+    </section>
+
+    <section id="agenda" class="tela">
+      <h2>Agenda</h2>
+      <p>Agendamentos via WhatsApp.</p>
+    </section>
+
+    <section id="contato" class="tela">
+      <h2>Contato</h2>
+      <p>Fale comigo pelo WhatsApp.</p>
+    </section>
+
   </main>
 
-  <!-- MENU INFERIOR -->
+  <!-- MENU -->
   <nav class="menu-app">
     <button onclick="mostrarTela('inicio')">🏠<span>Início</span></button>
     <button onclick="mostrarTela('terapias')">✨<span>Terapias</span></button>
-    <button onclick="mostrarTela('oraculos')">🔮<span>Oráculos</span></button>
     <button onclick="mostrarTela('agenda')">📅<span>Agenda</span></button>
     <button onclick="mostrarTela('contato')">💌<span>Contato</span></button>
   </nav>
