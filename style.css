@@ -145,43 +145,20 @@ main {
 #splash {
   position: fixed;
   inset: 0;
-  background: linear-gradient(135deg, #5e2b97, #8e44ad);
+  background: linear-gradient(135deg, #5e2b97, #8e44ad); /* mantém o fundo antigo */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  animation: splashFadeOut 0.8s ease forwards;
+  animation-delay: 2.2s;
 }
 
-.splash-conteudo {
-  text-align: center;
-  animation: surgir 1.2s ease;
-}
-
-.splash-logo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  background: white;
-  padding: 8px;
-  box-shadow: 
-    0 0 18px rgba(255, 215, 0, 0.6),
-    0 10px 25px rgba(0,0,0,0.35);
-  margin-bottom: 18px;
-}
-
-.splash-conteudo h1 {
-  margin: 0;
-  font-size: 26px;
-  font-weight: bold;
-  color: #fff;
-  letter-spacing: 0.5px;
-}
-
-.splash-conteudo p {
-  margin: 6px 0 0;
-  font-size: 15px;
-  color: #f3e9ff;
-  opacity: 0.95;
+#splash img {
+  width: 120px;        /* 🔥 tamanho ideal */
+  max-width: 45%;
+  height: auto;
+  animation: splashZoom 1.8s ease forwards;
 }
 
 /* animação */
