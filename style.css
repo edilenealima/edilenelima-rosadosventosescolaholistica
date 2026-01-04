@@ -47,29 +47,36 @@ main {
 .topo-app {
   background: linear-gradient(135deg, #5e2b97, #8e44ad);
   color: white;
-  padding: 20px 10px 15px;
+  padding: 25px 15px 20px;
   text-align: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
 }
 
 .logo-app {
-  width: 70px;
-  height: 70px;
-  border-radius: 20px;
-  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: white;
+  padding: 6px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 
-.titulo-app h1 {
-  margin: 0;
+.nome {
+  margin: 5px 0 2px;
   font-size: 20px;
   font-weight: bold;
 }
 
-.titulo-app h2 {
-  margin: 4px 0 0;
+.marca {
+  margin: 0;
   font-size: 13px;
   font-weight: normal;
   opacity: 0.9;
 }
-
