@@ -1,288 +1,202 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f3fa;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-main {
-  padding: 20px;
-  padding-top: 10px;
-  padding-bottom: 90px;
+/* CORES BASE */
+:root {
+  --roxo: #5e2b97;
+  --roxo-claro: #9c6ade;
+  --fundo: #f6f1fb;
+  --branco: #ffffff;
+  --cinza: #666;
+  --sombra: rgba(0, 0, 0, 0.12);
+}
 
+/* BODY */
+body {
+  background: var(--fundo);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* SPLASH */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, var(--roxo), var(--roxo-claro));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+}
+
+#splash img {
+  width: 120px;
+  margin-bottom: 16px;
+}
+
+#splash p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+#splash span {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* APP */
+#app {
+  padding-bottom: 90px;
+}
+
+/* TOPO */
+.topo-app {
+  background: linear-gradient(135deg, var(--roxo), var(--roxo-claro));
+  color: white;
+  padding: 24px 16px 20px;
+  text-align: center;
+  border-radius: 0 0 28px 28px;
+  box-shadow: 0 6px 20px var(--sombra);
+}
+
+.logo-container {
+  margin-bottom: 10px;
+}
+
+.logo-app {
+  width: 80px;
+}
+
+.nome {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.marca {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* FRASE */
+.frase-boas-vindas {
+  margin: 20px 16px;
+  padding: 16px;
+  background: var(--branco);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px var(--sombra);
+  text-align: center;
+  font-size: 15px;
+}
+
+/* TELAS */
+main {
+  padding: 0 16px;
 }
 
 .tela {
   display: none;
+  animation: fade 0.3s ease-in-out;
 }
 
 .tela.ativa {
   display: block;
 }
 
+/* ANIMAÇÃO */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CONTEÚDO */
+h2 {
+  color: var(--roxo);
+  margin-bottom: 12px;
+}
+
+p {
+  color: var(--cinza);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  margin-top: 12px;
+}
+
+ul li {
+  background: var(--branco);
+  margin-bottom: 10px;
+  padding: 14px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px var(--sombra);
+}
+
+/* BOTÃO WHATSAPP */
+.btn-whatsapp {
+  display: block;
+  margin: 20px auto;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  text-align: center;
+  width: fit-content;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* MENU INFERIOR */
 .menu-app {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 70px;
-  background: #5e2b97;
+  background: var(--branco);
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0 -6px 20px var(--sombra);
+  border-radius: 20px 20px 0 0;
 }
 
 .menu-app button {
   background: none;
   border: none;
-  color: white;
-  font-size: 14px;
+  font-size: 18px;
+  color: var(--cinza);
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
 }
 
-.menu-app button span {
-  font-size: 11px;
-}
-.topo-app {
-  background: linear-gradient(135deg, #5e2b97, #8e44ad);
-  color: white;
-  padding: 25px 15px 20px;
-  text-align: center;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+.menu-app span {
+  font-size: 12px;
+  margin-top: 4px;
 }
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 12px;
+.menu-app button:focus {
+  outline: none;
 }
 
-.logo-app {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: white;
-  padding: 6px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+.menu-app button:hover {
+  color: var(--roxo);
 }
-
-.nome {
-  margin: 5px 0 2px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.marca {
-  margin: 0;
-  font-size: 13px;
-  font-weight: normal;
-  opacity: 0.9;
-}
-.frase-boas-vindas {
-  position: relative;
-  margin: -24px auto 24px;
-  background: #ffffff;
-  padding: 20px 26px;
-  border-radius: 22px;
-  text-align: center;
-  box-shadow: 0 12px 28px rgba(94,43,151,0.35);
-  max-width: 78%;
-}
-
-.frase-boas-vindas p {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: #5e2b97;
-  line-height: 1.5;
-}
-.subtitulo-pagina {
-  text-align: center;
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 22px;
-}
-
-.lista-terapias {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.card-terapia {
-  background: white;
-  padding: 20px;
-  border-radius: 22px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.14);
-}
-
-.card-terapia h3 {
-  margin-top: 0;
-  color: #5e2b97;
-  font-size: 17px;
-}
-
-.card-terapia p {
-  font-size: 14.5px;
-  line-height: 1.5;
-  color: #444;
-}
-
-.card-terapia button {
-  margin-top: 12px;
-  background: #5e2b97;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 14px;
-  font-size: 14px;
-  cursor: pointer;
-}
-/* SPLASH SCREEN */
-#splash {
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(135deg, #5e2b97, #8e44ad); /* mantém o fundo antigo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  animation: splashFadeOut 0.8s ease forwards;
-  animation-delay: 2.2s;
-}
-
-#splash img {
-  width: 120px;        /* 🔥 tamanho ideal */
-  max-width: 45%;
-  height: auto;
-  animation: splashZoom 1.8s ease forwards;
-}
-
-/* animação */
-@keyframes surgir {
-  from {
-    opacity: 0;
-    transform: scale(0.92);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-  .bloco-info,
-.bloco-servicos,
-.bloco-acolhimento {
-  background: white;
-  margin: 20px auto;
-  padding: 18px 20px;
-  border-radius: 18px;
-  max-width: 90%;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-  text-align: center;
-}
-
-.bloco-info h2,
-.bloco-servicos h2 {
-  color: #5e2b97;
-  margin-bottom: 10px;
-  font-size: 17px;
-}
-
-.bloco-info p {
-  font-size: 14.5px;
-  line-height: 1.5;
-  color: #444;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 15px;
-}
-
-.card {
-  background: linear-gradient(135deg, #f7f3fa, #efe7f7);
-  border-radius: 16px;
-  padding: 16px 10px;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s ease;
-}
-
-.card span {
-  font-size: 13px;
-  margin-top: 6px;
-  color: #5e2b97;
-  font-weight: 500;
-}
-
-.card:hover {
-  transform: scale(1.04);
-}
-
-.card.whatsapp {
-  background: linear-gradient(135deg, #25d366, #1ebe5d);
-  color: white;
-}
-
-.card.whatsapp span {
-  color: white;
-}
-
-.bloco-acolhimento p {
-  font-size: 15px;
-  color: #5e2b97;
-  font-weight: 500;
-  line-height: 1.4;
-}
-/* SPLASH SCREEN */
-#splash {
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(135deg, #5e2b97, #8e44ad);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  animation: splashFadeOut 0.8s ease forwards;
-  animation-delay: 2.4s;
-}
-
-#splash img {
-  width: 180px;
-  max-width: 60%;
-  animation: splashZoom 2s ease forwards;
-}
-
-/* Animações */
-@keyframes splashZoom {
-  0% {
-    transform: scale(0.85);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes splashFadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-
-
-
 
