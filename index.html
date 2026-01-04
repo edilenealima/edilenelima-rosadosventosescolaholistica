@@ -120,7 +120,8 @@
       <button>Saiba mais</button>
     </div>
 </button>
-
+    </div>
+</section>
 
   </div>
 </section>
@@ -133,6 +134,111 @@
     <section class="tela" id="agenda">
       <h1>📅 Agenda</h1>
       <p>Agendamentos e atendimentos.</p>
+      <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento | Rosa dos Ventos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f1fb;
+      margin: 0;
+      padding: 16px;
+    }
+    h1 {
+      text-align: center;
+      color: #5b2d89;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 420px;
+      margin: 0 auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 14px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #6b2fa1, #9c6ade);
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📅 Agendamento</h1>
+
+  <div class="card">
+    <label>Seu nome</label>
+    <input type="text" id="nome" placeholder="Digite seu nome" />
+
+    <label>WhatsApp</label>
+    <input type="tel" id="telefone" placeholder="(DDD) número" />
+
+    <label>Serviço</label>
+    <select id="servico">
+      <option>Baralho Cigano</option>
+      <option>Terapia Energética</option>
+      <option>Curso / Iniciação</option>
+    </select>
+
+    <label>Data desejada</label>
+    <input type="date" id="data" />
+
+    <label>Horário</label>
+    <input type="time" id="hora" />
+
+    <label>Mensagem (opcional)</label>
+    <textarea id="msg" rows="3"></textarea>
+
+    <button onclick="enviarWhats()">Confirmar no WhatsApp</button>
+  </div>
+
+  <script>
+    function enviarWhats() {
+      const nome = document.getElementById('nome').value;
+      const tel = document.getElementById('telefone').value;
+      const serv = document.getElementById('servico').value;
+      const data = document.getElementById('data').value;
+      const hora = document.getElementById('hora').value;
+      const msg = document.getElementById('msg').value;
+
+      const texto = `✨ Agendamento Rosa dos Ventos ✨%0A%0A` +
+        `👤 Nome: ${nome}%0A` +
+        `📞 WhatsApp: ${tel}%0A` +
+        `🔮 Serviço: ${serv}%0A` +
+        `📅 Data: ${data}%0A` +
+        `⏰ Horário: ${hora}%0A` +
+        `💬 Mensagem: ${msg}`;
+
+      window.open(`https://wa.me/55SEUNUMERO?text=${texto}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
+
     </section>
 
     <section class="tela" id="contato">
