@@ -135,4 +135,41 @@ main {
   object-fit: cover;
   display: block;
 }
+.card-terapia {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px;
+  margin-bottom: 18px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  text-align: center;
+}
+
+.card-terapia h3 {
+  margin-top: 0;
+  color: #5e2b97;
+  font-size: 20px;
+}
+
+.card-terapia p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  margin: 12px 0 18px;
+}
+
+.card-terapia .botao {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #5e2b97, #9b59b6);
+  color: white;
+
+  box-shadow: 0 6px 15px rgba(94,43,151,0.4);
+}
+
 
