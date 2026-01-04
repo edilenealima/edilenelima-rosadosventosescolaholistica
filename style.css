@@ -265,8 +265,46 @@ main {
   font-weight: 500;
   line-height: 1.4;
 }
-
+/* SPLASH SCREEN */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #5e2b97, #8e44ad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: splashFadeOut 0.8s ease forwards;
+  animation-delay: 2.4s;
 }
+
+#splash img {
+  width: 180px;
+  max-width: 60%;
+  animation: splashZoom 2s ease forwards;
+}
+
+/* Animações */
+@keyframes splashZoom {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes splashFadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 
 
 
