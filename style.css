@@ -215,3 +215,16 @@ main {
   object-fit: cover;   /* 🔥 isso resolve 90% dos casos */
   display: block;
 }
+.frase {
+  text-align: center;
+  font-style: italic;
+  color: #5e2b97;
+}
+
+.fechamento {
+  background: #f7f2fb;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
