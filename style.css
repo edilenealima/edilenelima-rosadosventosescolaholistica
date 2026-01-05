@@ -227,4 +227,36 @@ main {
   font-size: 14px;
   color: #555;
 }
+.form-agenda {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-agenda label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #4a2b6b;
+}
+
+.form-agenda input,
+.form-agenda select {
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #d8c7ef;
+  font-size: 16px;
+  background: #fff;
+}
+
+.form-agenda input:focus,
+.form-agenda select:focus {
+  outline: none;
+  border-color: #b58ee6;
+}
+
+.form-agenda button {
+  margin-top: 10px;
+}
 
