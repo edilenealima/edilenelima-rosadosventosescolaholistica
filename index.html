@@ -134,29 +134,49 @@
 <div class="card">
   <h3>📅 Agende seu atendimento</h3>
 
-  <label>✨ Terapia</label>
-  <select id="servico">
-    <option>Baralho Cigano</option>
-    <option>Reiki</option>
-    <option>Terapia Energética</option>
-    <option>Sintonização</option>
-  </select>
+  <form class="form-agenda">
 
-  <label>📆 Data desejada</label>
-  <input type="date" id="data">
+  <label>
+    Nome
+    <input type="text" placeholder="Seu nome" required>
+  </label>
 
-  <label>⏰ Horário</label>
-  <input type="time" id="hora">
+  <label>
+    Terapia
+    <select required>
+      <option value="">Escolha a terapia</option>
+      <option>Reiki</option>
+      <option>Baralho Cigano</option>
+      <option>Terapias Energéticas</option>
+    </select>
+  </label>
 
+  <label>
+    Data
+    <input type="date" required>
+  </label>
+
+  <label>
+    Horário
+    <select required>
+      <option value="">Escolha o horário</option>
+      <option>15:00</option>
+      <option>16:00</option>
+      <option>17:00</option>
+      <option>18:00</option>
+    </select>
+  </label>
+
+  <button type="submit" class="botao">
     <a
   class="botao"
   href="https://wa.me/5511947791845?text=Olá%20Edilene!%20Gostaria%20de%20agendar%20uma%20sessão%20na%20Rosa%20dos%20Ventos.%20🌿✨"
   target="_blank"
 >
-  💚 Agendar pelo WhatsApp
+  💚 Confirmar no WhatsApp
 </a>
 </div>
-
+</form>
     
       <div class="card fechamento">
   ✨ Após o envio, você será direcionado(a)
