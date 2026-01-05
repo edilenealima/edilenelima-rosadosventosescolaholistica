@@ -132,40 +132,38 @@
   respeito e escuta profunda.
 </div>
 <div class="card">
-  <h3>📅 Agende seu atendimento</h3>
+ <h1>📅 Agendamento</h1>
 
-  <form class="form-agenda">
+  <div class="card">
+    <label>Seu nome</label>
+    <input type="text" id="nome" placeholder="Digite seu nome" />
 
-  <label>
-    Nome
-    <input type="text" placeholder="Seu nome" required>
-  </label>
+    <label>WhatsApp</label>
+    <input type="tel" id="telefone" placeholder="(DDD) número" />
 
-  <label>
-    Terapia
+    <label>Terapia</label>
     <select required>
-      <option value="">Escolha a terapia</option>
       <option>Reiki</option>
       <option>Baralho Cigano</option>
       <option>Terapias Energéticas</option>
       <option>Iniciação</option>
     </select>
-  </label>
 
-  <label>
-    Data
-    <input type="date" required>
-  </label>
+    <label>Data desejada</label>
+    <input type="date" id="data" />
 
-  <label>
-    Horário
-    <select required>
+    <label>Horário</label>
+    <input type="time" id="hora" />
+ <select required>
       <option value="">Escolha o horário</option>
       <option>15:00</option>
       <option>16:00</option>
       <option>17:00</option>
       <option>18:00</option>
     </select>
+    <label>Mensagem (opcional)</label>
+    <textarea id="msg" rows="3"></textarea>
+
   </label>
 
     <a
