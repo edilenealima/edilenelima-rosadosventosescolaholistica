@@ -134,37 +134,40 @@
 <div class="card">
  <h1>📅 Agendamento</h1>
 
-  <div class="card">
-    <label>Seu nome</label>
-    <input type="text" id="nome" placeholder="Digite seu nome" />
+  <form class="form-agenda">
 
-    <label>WhatsApp</label>
-    <input type="tel" id="telefone" placeholder="(DDD) número" />
+  <label>
+    Nome
+    <input type="text" placeholder="Seu nome" required>
+  </label>
 
-    <label>Terapia</label>
+  <label>
+    Terapia
     <select required>
+      <option value="">Escolha a terapia</option>
       <option>Reiki</option>
       <option>Baralho Cigano</option>
       <option>Terapias Energéticas</option>
       <option>Iniciação</option>
     </select>
+  </label>
 
-    <label>Data desejada</label>
-    <input type="date" id="data" />
+  <label>
+    Data
+    <input type="date" required>
+  </label>
 
-    <label>Horário</label>
-    <input type="time" id="hora" />
- <select required>
+  <label>
+    Horário
+    <select required>
       <option value="">Escolha o horário</option>
       <option>15:00</option>
       <option>16:00</option>
       <option>17:00</option>
       <option>18:00</option>
     </select>
-    <label>Mensagem (opcional)</label>
-    <textarea id="msg" rows="3"></textarea>
-
   </label>
+
 
     <a
   class="botao"
