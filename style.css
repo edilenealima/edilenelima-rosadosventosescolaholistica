@@ -250,11 +250,5 @@ main {
   background: linear-gradient(135deg, #5e2b97, #9b6ad8);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-@media (min-width: 768px) {
-  .form-agenda {
-    max-width: 400px;
-    margin: auto;
-  }
-}
 
 
