@@ -227,40 +227,50 @@ main {
   font-size: 14px;
   color: #555;
 }
-.form-agenda {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.agenda-medica {
+  width: 100%;
   max-width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.form-agenda label {
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
   font-size: 12px;
+  margin-bottom: 4px;
   color: #6a4c93;
-  margin-top: 6px;
 }
 
-.form-agenda input,
-.form-agenda select {
-  padding: 8px 10px;
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 10px;
   font-size: 14px;
-  border-radius: 6px;
-  border: 1px solid #d6c6eb;
+  border-radius: 8px;
+  border: 1px solid #d8cdee;
   background: #fff;
 }
 
-.form-agenda input:focus,
-.form-agenda select:focus {
+.campo input:focus,
+.campo select:focus {
   outline: none;
   border-color: #5e2b97;
 }
 
-.form-agenda button {
-  margin-top: 14px;
-  padding: 10px;
+.botao-agenda {
+  margin-top: 10px;
+  padding: 12px;
   font-size: 14px;
-  border-radius: 20px;
+  border-radius: 24px;
+  background: #6f42c1;
+  color: white;
+  border: none;
   width: 100%;
   max-width: 220px;
   align-self: center;
