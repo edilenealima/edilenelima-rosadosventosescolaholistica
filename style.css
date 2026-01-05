@@ -230,15 +230,15 @@ main {
 .form-agenda {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  max-width: 340px;
+  gap: 6px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
 .form-agenda label {
   font-size: 12px;
   color: #6a4c93;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .form-agenda input,
@@ -257,11 +257,11 @@ main {
 }
 
 .form-agenda button {
-  margin-top: 10px;
-  padding: 9px;
+  margin-top: 14px;
+  padding: 10px;
   font-size: 14px;
-  border-radius: 18px;
+  border-radius: 20px;
   width: 100%;
-  max-width: 240px;
+  max-width: 220px;
   align-self: center;
 }
