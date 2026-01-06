@@ -275,3 +275,31 @@ main {
   max-width: 220px;
   align-self: center;
 }
+#splash {
+  position: fixed;
+  inset: 0;
+  background: #5e2b97; /* mesmo roxo do ícone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#splash img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  animation: splashFade 1.2s ease-in-out;
+}
+
+@keyframes splashFade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
